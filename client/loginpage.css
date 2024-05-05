@@ -1,0 +1,5 @@
+.login-container {
+    height: 100vh; /* Set height to cover entire viewport height */
+    width: 100%; /* Set width to cover entire viewport width */
+    background-size: cover
+}
