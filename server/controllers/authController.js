@@ -60,7 +60,7 @@ const loginUser = async (req , res) =>{
         //check password match
         const match = await comparePassword(password , user.password)
         if(match){
-            jwt.sign({email: user.email , id: user._id , name : user.name} , process.env.JWT_SECRET , { expiresIn: '1h' } , (err , token) => {
+            jwt.sign({email: user.email , id: user._id , name : user.name} , 'jhdag638w69f9wgw97w3gf4396f7w397w67wer5' , { expiresIn: '1h' } , (err , token) => {
                 if(err) throw err;
                 console.log("Login User - JWT Token:", token);
                 res.cookie('token', token, { httpOnly: true }).json(user)
