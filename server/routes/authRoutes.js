@@ -3,7 +3,7 @@ const router = express.Router()
 const cors = require('cors')
 const {test , registerUser , loginUser , getProfile , logoutUser  } = require('../controllers/authController')
 
-
+//
 //middleware
 router.use(
     cors({
